@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopHub - Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-left">
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <h1 class="logo">ShopHub</h1>
+        <div class="nav-links">
+          <a href="#" class="active">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="search-bar">
+          <input type="search" placeholder="Search products...">
+          <button>🔍</button>
+        </div>
+        <button class="cart-btn" id="cartBtn">
+          🛒
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to ShopHub</h1>
+        <p>Discover amazing products at great prices</p>
+      </div>
+      <div class="carousel" id="carousel">
+        <button class="carousel-btn prev" id="prevBtn">❮</button>
+        <div class="carousel-container" id="carouselContainer"></div>
+        <button class="carousel-btn next" id="nextBtn">❯</button>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="category-filters" id="categoryFilters"></div>
+    </section>
+
+    <section class="products" id="productsGrid"></section>
+  </main>
+
+  <div class="cart-modal" id="cartModal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2>Shopping Cart</h2>
+        <button class="close-btn" id="closeCartBtn">✕</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We're dedicated to providing the best shopping experience with quality products and excellent service.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ShopHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
