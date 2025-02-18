@@ -1,3 +1,5 @@
+# Live link: https://rhythm05roy.github.io/Lab-Ecommerce/
+
 # ShopHub E-commerce Website
 
 A modern, responsive e-commerce website built with vanilla HTML, CSS, and JavaScript. This project demonstrates a clean, user-friendly interface with essential e-commerce features.
